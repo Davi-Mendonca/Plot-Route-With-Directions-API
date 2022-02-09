@@ -1,0 +1,30 @@
+<html lang="pt">
+
+<head>
+  <h2>Google maps test</h2>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ6yS2YH19-sndShzPhG1O29LiU9JMof8&libraries=places&callback=initMap"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<br>
+
+<body>
+  <form>
+    <input name="txt_endereco_partida" style="width:320px" type="text" placeholder="Partida" id="partida"></input>
+    <input style="width:320px" type="text" placeholder="Destino" id="destino"></input>
+    <button type="button" id="tracarRota">Traçar rota</button>
+  </form>
+
+  <div>
+    <div id="map"></div>
+    <div id="details"></div>
+  </div>
+
+
+  <iframe id="iframePrintDetails" style="width:0;height:0;border: 0 solid white;"></iframe>
+
+  <script src="directions.js"></script>
+</body>
+
+</html>
